@@ -45,7 +45,10 @@
             & a {
                 size: $px20;
                 font-weight: 500;
+                text-transform: uppercase;
                 text-decoration: none;
+                padding: 0.75rem;
+                border-radius: 0.75rem;
             }
 
             & a:hover {

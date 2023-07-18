@@ -8,18 +8,25 @@ export default function Header() {
       <Link id="headerlogo" to={"/"}>VanVisual</Link>
       <nav>
         <ul className='navbar'>
+
           <li className='navbar__item'>
-            <NavLink to="/" activeclassname="active">
+            <NavLink to="/contact" className="navbar__item--request">
+              Request a design
+            </NavLink>
+          </li>
+
+          <li className='navbar__item'>
+            <NavLink to="/" className="navbar__item--link">
               Home
             </NavLink>
           </li>
           <li className='navbar__item'>
-            <NavLink to="/projects/" activeclassname="active">
+            <NavLink to="/projects/" className="navbar__item--link">
               Our Work
             </NavLink>
           </li>
           <li className='navbar__item'>
-            <NavLink to="/about" activeclassname="active">
+            <NavLink to="/about" className="navbar__item--link">
               About Us
             </NavLink>
           </li>

@@ -1,0 +1,29 @@
+// @use './mixins.scss' as *;
+
+@use './colours.scss' as *;
+
+body {
+    background-color: $page;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+div,
+button,
+p {
+     
+}
+
+ 
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

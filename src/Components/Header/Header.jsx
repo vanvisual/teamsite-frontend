@@ -5,28 +5,30 @@ export default function Header() {
   return (
 
     <div id='header'>
-      <Link id="headerlogo" to={"/"}>VanVisual</Link>
-      <nav>
-        <ul className='navbar'>
+      <Link className="headerlogo" to={"/"}>
+        <span className='headerlogo__van'>Van</span><span className='headerlogo__visual'>Visual</span>
+      </Link>
+      <nav id='navbar'>
+        <ul className='navlist'>
 
-          <li className='navbar__item'>
-            <NavLink to="/contact" className="navbar__item--request">
+          <li className='navlist__item navlist__item--request'>
+            <Link to="/contact" className="navlist__item--request">
               Request a design
-            </NavLink>
+            </Link>
           </li>
 
-          <li className='navbar__item'>
-            <NavLink to="/" className="navbar__item--link">
+          <li className='navlist__item'>
+            <NavLink to="/" className="navlist__item--link">
               Home
             </NavLink>
           </li>
-          <li className='navbar__item'>
-            <NavLink to="/projects/" className="navbar__item--link">
+          <li className='navlist__item'>
+            <NavLink to="/projects/" className="navlist__item--link">
               Our Work
             </NavLink>
           </li>
-          <li className='navbar__item'>
-            <NavLink to="/about" className="navbar__item--link">
+          <li className='navlist__item'>
+            <NavLink to="/about" className="navlist__item--link">
               About Us
             </NavLink>
           </li>

@@ -1,24 +1,53 @@
 @use '../../styles/global.scss' as *;
 @use '../../styles/colours.scss' as *;
+@use '../../styles/mixins.scss' as *;
 @use '../../styles/fontsandconversions.scss' as *;
+
 
 #header {
     background-color: $header-bg;
+    display: flex;
+    align-items: center;
+    height: $px120;
+    padding: 0 2rem;
 
-    .navbar {
+    * {
+        font-family: 'Barlow', sans-serif;
+    }
+
+    #navbar {
+        width: 100%;
+    }
+
+    .headerlogo {
+        
+        font-size: $px44;
+        font-weight: 700;
+
+        &__van {
+            color: $logo-van;
+        }
+
+        &__visual {
+            color: $logo-vis;
+        }
+    }
+
+    .navlist {
         list-style: none;
         display: flex;
         flex-direction: row;
+        margin-bottom: 0;
+        gap: 1rem;
 
         &__item {
 
             & a {
                 size: $px20;
-                font-family: 'Barlow', sans-serif;
                 font-weight: 500;
                 text-decoration: none;
             }
-    
+
             & a:hover {
                 color: $logo-vis;
             }
@@ -26,16 +55,22 @@
             &--link {
                 color: $header-item;
             }
-    
-            &--request, &--request a {
-                color: $header-btn;
-                background-color: $header-btn-bg;
-            }
 
+            &--request {
+
+                margin-left: auto;
+                order: +1;
+
+                a {
+                    color: $header-btn;
+                    background-color: $header-btn-bg;
+                }
+            }
         }
 
 
-        .active, .active:hover {
+        .active,
+        .active:hover {
             color: $logo-van;
         }
 
@@ -43,6 +78,6 @@
 
 }
 
-.navbar {
+.navlist {
     color: $color-a;
 }

@@ -1,5 +1,35 @@
-// @use '../../styles/global.scss' as *;
+@use '../../styles/global.scss' as *;
 @use '../../styles/colours.scss' as *;
+@use '../../styles/fontsandconversions.scss' as *;
+@use '../../styles/fontsandconversions.scss' as *;
+
+#header {
+    background-color: $header-bg;
+
+    .navbar {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        &__item a {
+            color: $header-item;
+            size: $px20;
+            font-family: 'Barlow', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        &__item a:hover {
+            color: $logo-vis;
+        }
+
+        .active, .active:hover {
+            color: $logo-van;
+        }
+
+    }
+
+}
 
 .navbar {
     color: $color-a;

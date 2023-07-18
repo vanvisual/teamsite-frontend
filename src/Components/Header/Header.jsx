@@ -3,7 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <div id='header'> 
+
+    <div id='header'>
       <Link id="headerlogo" to={"/"}>VanVisual</Link>
       <nav>
         <ul className='navbar'>
@@ -16,16 +17,15 @@ export default function Header() {
             <NavLink to="/projects/" activeclassname="active">
               Our Work
             </NavLink>
-          </li> 
+          </li>
           <li className='navbar__item'>
-            <NavLink to="/contact" activeclassname="active">
+            <NavLink to="/about" activeclassname="active">
               About Us
             </NavLink>
           </li>
         </ul>
       </nav>
-
-
     </div>
+
   )
 }

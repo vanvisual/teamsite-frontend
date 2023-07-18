@@ -1,6 +1,31 @@
-// @use '../../styles/global.scss' as *;
+@use '../../styles/global.scss' as *;
 @use '../../styles/colours.scss' as *;
+@use '../../styles/fontsandconversions.scss' as *;
+
+#header { 
+    background-color: beige;
+}
 
 .navbar {
     color: $color-a;
+}
+
+.custom-shape-divider-bottom-1689659056 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1689659056 svg {
+    position: relative;
+    display: block;
+    width: calc(294% + 1.3px);
+    height: $px114;
+}
+
+.custom-shape-divider-bottom-1689659056 .shape-fill {
+    fill: $page;
 }

@@ -19,7 +19,7 @@ export default function Header() {
       </Link>
 
       {/* Navbar */}
-      <nav className={`navbar ${isHamburgerOpen ? 'ham-active' : ''}`}>
+      <nav className={`navbar ${isHamburgerOpen ? 'active' : ''}`}>
         <ul className='navlist'>
           <li className='navlist__item navlist__item--request'>
             <Link to="/contact" className="navlist__item--request" onClick={handleNavLinkClick}>
@@ -45,10 +45,10 @@ export default function Header() {
       </nav>
 
       {/* Hamburger menu */}
-      <div className={`hamburger ${isHamburgerOpen ? 'burger-active' : ''}`} onClick={toggleHamburger}>
-        <span className="hamburger__bar"></span>
-        <span className="hamburger__bar"></span>
-        <span className="hamburger__bar"></span>
+      <div className={`hamburger ${isHamburgerOpen ? 'active' : ''}`} onClick={toggleHamburger}>
+        <span className="hamburger__bar hamburger__bar-1"></span>
+        <span className="hamburger__bar hamburger__bar-2"></span>
+        <span className="hamburger__bar hamburger__bar-3"></span>
       </div>
     </div>
   );

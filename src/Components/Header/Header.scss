@@ -11,11 +11,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 
     @include tablet {
         height: $px120;
         width: auto;
         padding: 0 2rem;
+        overflow: unset;
 
     }
 
@@ -24,8 +26,8 @@
     }
 
     .navbar {
-        opacity: 0; 
-        pointer-events: none; 
+        opacity: 0;
+        pointer-events: none;
         transition: opacity 0.125s cubic-bezier(0.44, 0, 0.99, 0.13);
         box-sizing: border-box;
         width: 100%;
@@ -48,12 +50,13 @@
             opacity: 1;
             pointer-events: all;
         }
-    }
 
-    .ham-active {
-        opacity: 1;
-        pointer-events: all;
-    } 
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+    }
 
     .headerlogo {
         font-size: $px44;
@@ -83,9 +86,7 @@
             width: 100%;
             flex-direction: row;
             gap: 1rem;
-            padding: 0rem;
         }
-
 
         &__item {
 
@@ -126,7 +127,6 @@
             }
         }
 
-
         .active,
         .active:hover {
             color: $logo-van;
@@ -140,8 +140,6 @@
     color: $color-a;
 }
 
-
-
 .hamburger {
 
     @include tablet {
@@ -150,11 +148,30 @@
 
     &__bar {
         display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
+        width: $px30;
+        height: $px3;
+        margin: $px5 auto;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         background-color: $hamburger-bar;
+
+        &-2 {
+            margin-right: 0;
+            width: $px20;
+        }
+
+    }
+
+    &.active &__bar-1 {
+        transform: translateY(0.5rem) rotate(45deg);
+    }
+
+    &.active &__bar-2 {
+        margin-right: -20rem;
+        opacity: 0;
+    }
+
+    &.active &__bar-3 {
+        transform: translateY(-0.5rem) rotate(-45deg);
     }
 }

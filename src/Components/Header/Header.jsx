@@ -19,7 +19,7 @@ export default function Header() {
       </Link>
 
       {/* Navbar */}
-      <nav id='navbar' className={`navlist ${isHamburgerOpen ? 'ham-active' : ''}`}>
+      <nav className={`navbar ${isHamburgerOpen ? 'ham-active' : ''}`}>
         <ul className='navlist'>
           <li className='navlist__item navlist__item--request'>
             <Link to="/contact" className="navlist__item--request" onClick={handleNavLinkClick}>

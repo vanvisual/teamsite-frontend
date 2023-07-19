@@ -50,12 +50,15 @@
             opacity: 1;
             pointer-events: all;
         }
+
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+        } 
+        
     }
 
-    .ham-active {
-        opacity: 1;
-        pointer-events: all;
-    } 
+    
 
     .headerlogo {
         font-size: $px44;
@@ -128,7 +131,6 @@
             }
         }
 
-
         .active,
         .active:hover {
             color: $logo-van;
@@ -164,16 +166,16 @@
 
     }
 
-    &.burger-active  &__bar-1 {
+    &.active  &__bar-1 {
         transform: translateY(0.5rem) rotate(45deg);
     }
 
-    &.burger-active &__bar-2 {
+    &.active &__bar-2 {
         margin-right: -20rem;
         opacity: 0;
     }
     
-    &.burger-active  &__bar-3 {
+    &.active  &__bar-3 {
         transform: translateY(-0.5rem) rotate(-45deg);
     }
 }

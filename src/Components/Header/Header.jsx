@@ -1,7 +1,27 @@
 import './Header.scss';
 import { Link, NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Header() {
+
+
+
+  useEffect(() => {
+    const hamburger = document.querySelector(".hamburger");
+    const navBar = document.querySelector("#navbar");
+
+    function mobileMenu() {
+      hamburger.classList.toggle("burger-active");
+      navBar.classList.toggle("ham-active");
+    }
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    return () => {
+      hamburger.removeEventListener("click", mobileMenu);
+    };
+  }, []);
+
   return (
 
     <div id='header'>
@@ -34,6 +54,14 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+
+      <div className="hamburger">
+        <span className="hamburger__bar"></span>
+        <span className="hamburger__bar"></span>
+        <span className="hamburger__bar"></span>
+      </div>
+
+
     </div>
 
   )

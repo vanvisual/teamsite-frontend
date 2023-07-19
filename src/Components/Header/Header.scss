@@ -7,13 +7,13 @@
 #header {
     background-color: $header-bg;
     height: $px80;
-    width: 100%;
+    // width: 100%;
     padding: 1rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     @include tablet {
-
         height: $px120;
         width: auto;
         padding: 0 2rem;
@@ -25,7 +25,7 @@
     }
 
     #navbar {
-        display: none; // temporarily hidden
+        display: none;
         box-sizing: border-box;
         width: 100%;
         height: 100%;
@@ -46,10 +46,14 @@
         }
     }
 
-    .headerlogo {
+    .ham-active {
+        display: flex !important;
+    }
 
+    .headerlogo {
         font-size: $px44;
         font-weight: 700;
+        text-decoration: none;
 
         &__van {
             color: $logo-van;
@@ -128,4 +132,23 @@
 
 .navlist {
     color: $color-a;
+}
+
+
+
+.hamburger {
+
+    @include tablet {
+        display: none;
+    }
+
+    &__bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: $hamburger-bar;
+    }
 }

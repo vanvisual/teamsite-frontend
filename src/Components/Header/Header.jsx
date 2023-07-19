@@ -46,9 +46,9 @@ export default function Header() {
 
       {/* Hamburger menu */}
       <div className={`hamburger ${isHamburgerOpen ? 'burger-active' : ''}`} onClick={toggleHamburger}>
-        <span className="hamburger__bar"></span>
-        <span className="hamburger__bar"></span>
-        <span className="hamburger__bar"></span>
+        <span className="hamburger__bar hamburger__bar-1"></span>
+        <span className="hamburger__bar hamburger__bar-2"></span>
+        <span className="hamburger__bar hamburger__bar-3"></span>
       </div>
     </div>
   );

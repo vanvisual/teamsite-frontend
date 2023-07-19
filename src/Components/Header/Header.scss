@@ -11,11 +11,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 
     @include tablet {
         height: $px120;
         width: auto;
         padding: 0 2rem;
+        overflow: unset;
 
     }
 
@@ -140,8 +142,6 @@
     color: $color-a;
 }
 
-
-
 .hamburger {
 
     @include tablet {
@@ -150,11 +150,31 @@
 
     &__bar {
         display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
+        width: $px30;
+        height: $px3;
+        margin: $px5 auto;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         background-color: $hamburger-bar;
+
+        &-2 {
+            margin-right: 0;
+            width: $px20;
+        }
+
+    }
+
+    &.burger-active  &__bar-1 {
+        transform: translateY(0.5rem) rotate(45deg);
+    }
+
+    &.burger-active &__bar-2 {
+        margin-right: -20rem;
+        opacity: 0;
+    }
+    
+    &.burger-active  &__bar-3 {
+        transform: translateY(-0.5rem) rotate(-45deg);
     }
 }
+

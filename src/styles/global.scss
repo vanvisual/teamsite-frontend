@@ -27,3 +27,9 @@ p {
     opacity: 0;
     pointer-events: none;
 }
+
+
+
+.letter {
+    transition: all 0.25s cubic-bezier(0.48, 2.06, 0.51, 0.35);
+}

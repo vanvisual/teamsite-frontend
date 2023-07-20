@@ -1,15 +1,16 @@
 import './HomePage.scss';
 import { useDocumentTitle } from '../../utils/functions';
 // Components
-import Hero from '../../Components/Hero/Hero';
+import HomeHero from '../../Components/HomeHero/HomeHero';
 
-export default function HomePage() {
+const HomePage = () => {
   useDocumentTitle('Home - VanVisual.com');
 
   return (
     <div className="homepage">
-        <Hero />
+      <HomeHero />
     </div>
-  );
+  )
+};
 
-}
+export default HomePage

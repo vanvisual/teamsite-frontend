@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Hero.scss";
+// Icon
+import arrow from "../../assets/icons/arrow.png";
 
 const Hero = () => {
     return (
@@ -13,6 +15,7 @@ const Hero = () => {
                 <p className="hero__subtitle">OUR WORK</p>
                 <div className="hero__group">
                     <p className="hero__subtitle">Great work gets result</p>
+                    <img src={arrow} alt="Arrow Icon" className="hero__icon" />
                 </div>
             </div>
         </div>

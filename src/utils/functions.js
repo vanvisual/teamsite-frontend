@@ -38,7 +38,7 @@ export function animateLetters(className) {
 
   links.forEach((link) => {
     const text = link.textContent;
-    link.innerHTML = '';
+    link.textContent = '';
 
     for (let i = 0; i < text.length; i++) {
       const letterSpan = document.createElement('span');

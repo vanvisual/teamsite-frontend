@@ -5,7 +5,7 @@ import { animateLetters } from '../../utils/functions';
 
 import './Header.scss';
 
-export default function Header() {
+const Header = () => {
   const [isHamburgerOpen, toggleHamburger, isHamburgerClicked, setIsHamburgerClicked] = useToggleClass(false);
   const [delayedItems, setDelayedItems] = useState([]);
   const delayedItemsTimeoutsRef = useRef([]);
@@ -81,3 +81,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default Header;

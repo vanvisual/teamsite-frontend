@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { animateLetters } from '../../utils/functions';
 
-export default () => {
+const Footer = () => {
     useEffect(() => {
         animateLetters('.footlist__item--link');
     }, []);
@@ -22,4 +22,6 @@ export default () => {
             </nav>
         </div>
     );
-}; 
+};
+
+export default Footer;

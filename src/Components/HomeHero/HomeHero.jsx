@@ -1,7 +1,7 @@
 import "./HomeHero.scss";
 import arrow from "../../assets/icons/arrow.png";
 
-const Hero = () => (
+const HomeHero = () => (
 
     <div className="hero">
         <div className="hero__section">
@@ -20,4 +20,4 @@ const Hero = () => (
 
 )
 
-export default Hero;
+export default HomeHero;

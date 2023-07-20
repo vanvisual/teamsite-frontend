@@ -23,8 +23,8 @@ export const useToggleClass = (initialState = false) => {
 export function animateLetters(className) {
   function applyRandomTransform(letter) {
     if (!letter.dataset.randomX || !letter.dataset.randomY) {
-      letter.dataset.randomX = Math.floor(Math.random() * 21 - 10) / 10;
-      letter.dataset.randomY = Math.floor(Math.random() * 11 - 10) / 10;
+      letter.dataset.randomX = (Math.floor(Math.random() * 21) - 10) / 20;
+      letter.dataset.randomY = (Math.floor(Math.random() * 21) - 10) / 10;
     }
 
     letter.style.transform = `translateX(${letter.dataset.randomX}rem) translateY(${letter.dataset.randomY}rem)`;

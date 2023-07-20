@@ -1,0 +1,36 @@
+@use '../../styles/global.scss' as *;
+@use '../../styles/colours.scss' as *;
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/fontsandconversions.scss' as *;
+
+.hero {
+    background: linear-gradient(90deg, #7000FF, #00FFFF );
+    padding: 5rem 1rem;
+    color: white;
+    @include tablet {
+        padding: 5rem 2rem;
+    }
+    &__title {
+        font-size: 1.2rem;
+        padding: 1rem 0;
+        font-size: $px40;
+        font-weight: 600;
+        @include tablet{
+            font-size: 2.5rem;
+        }
+    }
+    &__subtitle {
+        @include tablet {
+            font-size: 1.3rem;
+        }
+    }
+    &__section2 {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: start;
+    }
+}

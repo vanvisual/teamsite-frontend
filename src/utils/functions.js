@@ -8,10 +8,14 @@ export const useDocumentTitle = (title) => {
 
 export const useToggleClass = (initialState = false) => {
   const [isOpen, setIsOpen] = useState(initialState);
+  const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
 
   const toggleClass = () => {
     setIsOpen(!isOpen);
+    if (isHamburgerClicked) {
+      setIsHamburgerClicked(false);
+    }
   };
 
-  return [isOpen, toggleClass];
-}; 
+  return [isOpen, toggleClass, isHamburgerClicked, setIsHamburgerClicked];
+};

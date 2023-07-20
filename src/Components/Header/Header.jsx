@@ -5,17 +5,9 @@ import { useToggleClass } from '../../utils/functions';
 import './Header.scss';
 
 export default function Header() {
-  const [isHamburgerOpen, toggleHamburger] = useToggleClass(false);
-  const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
+  const [isHamburgerOpen, toggleHamburger, isHamburgerClicked, setIsHamburgerClicked] = useToggleClass(false);
   const [delayedItems, setDelayedItems] = useState([]);
   const delayedItemsTimeoutsRef = useRef([]);
-
-  const handleNavLinkClick = () => {
-    if (isHamburgerOpen) {
-      toggleHamburger();
-      setIsHamburgerClicked(true);
-    }
-  };
 
   useEffect(() => {
     if (isHamburgerOpen) {
@@ -35,6 +27,13 @@ export default function Header() {
       delayedItemsTimeoutsRef.current.forEach((timeout) => clearTimeout(timeout));
     };
   }, [isHamburgerOpen]);
+
+  const handleNavLinkClick = () => {
+    if (isHamburgerOpen) {
+      toggleHamburger();
+      setIsHamburgerClicked(true);
+    }
+  };
 
   return (
     <div id='header'>

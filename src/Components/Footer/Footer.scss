@@ -24,12 +24,32 @@
             &--link {
                 text-decoration: none;
                 color: $footer-item;
+                display: flex;
+
+                .letter {
+                    transition: all 60ms ease-in-out;
+                }
             }
 
-            &--link:hover {
+            &--link:hover .letter {
+                color: $logo-van;
+            }
+
+            &--link:hover .letter:nth-child(odd) {
+                // transform: translateX(-0.125rem) translateY(-0.5rem);
+                color: $logo-vis;
+            }
+
+            &--link:hover .letter:nth-child(2n+5) {
+                // transform: translateX(0.25rem) translateY(0.25rem);
+                color: $logo-van;
+            }
+
+
+            &--link:hover .letter:nth-child(3n+2) {
+                // transform: translateY(-0.3rem);
                 color: $logo-vis;
             }
         }
     }
-
 }

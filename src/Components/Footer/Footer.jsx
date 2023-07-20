@@ -1,7 +1,15 @@
 import './Footer.scss';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { animateLetters } from '../../utils/functions';
+
 
 export default function Footer() {
+
+    useEffect(() => {
+        animateLetters('.footlist__item--link');
+    })
+
     return (
         <div id='footer'>
 

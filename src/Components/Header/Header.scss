@@ -94,7 +94,7 @@
             flex-direction: row;
             gap: 1rem;
         }
-        
+
 
         &__item {
 
@@ -162,12 +162,12 @@
 
     }
 
-    .active > .navlist {
+    .active>.navlist {
         margin-left: 0;
         opacity: 1;
     }
 
-    
+
 
 
 
@@ -192,7 +192,8 @@
         transition: all 0.3s ease-in-out;
         background-color: $hamburger-bar;
 
-        &-1, &-3 {
+        &-1,
+        &-3 {
             transition-property: transform;
             transition-delay: 0.125s;
         }

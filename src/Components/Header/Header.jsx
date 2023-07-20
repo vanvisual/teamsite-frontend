@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useToggleClass } from '../../utils/functions';
+import { animateLetters } from '../../utils/functions';
 
 import './Header.scss';
 
@@ -34,6 +35,10 @@ export default function Header() {
       setIsHamburgerClicked(true);
     }
   };
+
+  useEffect(() => {
+    animateLetters('.navlist__item--link');
+  })
 
   return (
     <div id='header'>

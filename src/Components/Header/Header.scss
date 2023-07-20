@@ -105,6 +105,13 @@
                 opacity: 1;
             }
 
+            &--link {
+
+                @include tablet {
+                    display: flex;
+                }
+            }
+
             & a {
                 size: $px20;
                 font-weight: 500;

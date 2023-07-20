@@ -2,3 +2,34 @@
 @use '../../styles/colours.scss' as *;
 @use '../../styles/mixins.scss' as *;
 @use '../../styles/fontsandconversions.scss' as *;
+
+.footernav {
+    display: flex;
+    width: 100%;
+    height: $px80;
+    background-color: $footer-bg;
+    align-items: center;
+
+    .footlist {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+
+        &__item {
+            width: 6rem;
+            color: $footer-item;
+
+            &--link {
+                text-decoration: none;
+                color: $footer-item;
+            }
+
+            &--link:hover {
+                color: $logo-vis;
+            }
+        }
+    }
+
+}

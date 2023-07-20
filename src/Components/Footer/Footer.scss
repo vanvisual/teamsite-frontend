@@ -27,7 +27,7 @@
                 display: flex;
 
                 .letter {
-                    transition: all 60ms ease-in-out;
+                    transition: all 0.25s cubic-bezier(0.48, 2.06, 0.51, 0.35);
                 }
             }
 

@@ -12,7 +12,7 @@ const Header = () => {
 
   useEffect(() => {
     if (isHamburgerOpen) {
-      const navItems = document.querySelectorAll('.navlist__item');
+      const navItems = document.querySelectorAll('.navbar__item');
       const delayTime = 500;
 
       delayedItemsTimeoutsRef.current = Array.from(navItems).map((item, index) =>
@@ -37,7 +37,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    animateLetters('.navlist__item--link');
+    animateLetters('.link-animate');
   })
 
   return (
@@ -48,24 +48,24 @@ const Header = () => {
 
       {/* Navbar */}
       <nav className={`navbar ${isHamburgerOpen ? 'active' : ''}`}>
-        <ul className='navlist'>
-          <li className={`navlist__item navlist__item-1 navlist__item-1`}>
-            <Link to="/contact" className="navlist__item--request" onClick={handleNavLinkClick}>
+        <ul className='navbar__list'>
+          <li className={`navbar__item navbar__item-1 navbar__item-1`}>
+            <Link to="/contact" className="navbar__link navbar__link--request" onClick={handleNavLinkClick}>
               Request a design
             </Link>
           </li>
-          <li className={`navlist__item navlist__item-2 ${delayedItems.includes(1) ? 'delay' : ''}`}>
-            <NavLink to="/" className="navlist__item--link" onClick={handleNavLinkClick} >
+          <li className={`navbar__item navbar__item-2 ${delayedItems.includes(1) ? 'delay' : ''}`}>
+            <NavLink to="/" className="navbar__link link-animate" onClick={handleNavLinkClick} >
               Home
             </NavLink>
           </li>
-          <li className={`navlist__item ${delayedItems.includes(2) ? 'delay' : ''}`}>
-            <NavLink to="/projects/" className="navlist__item--link" onClick={handleNavLinkClick} >
+          <li className={`navbar__item ${delayedItems.includes(2) ? 'delay' : ''}`}>
+            <NavLink to="/projects/" className="navbar__link link-animate" onClick={handleNavLinkClick} >
               Our Work
             </NavLink>
           </li>
-          <li className={`navlist__item ${delayedItems.includes(3) ? 'delay' : ''}`}>
-            <NavLink to="/about" className="navlist__item--link" onClick={handleNavLinkClick} >
+          <li className={`navbar__item ${delayedItems.includes(3) ? 'delay' : ''}`}>
+            <NavLink to="/about" className="navbar__link link-animate" onClick={handleNavLinkClick} >
               About Us
             </NavLink>
           </li>

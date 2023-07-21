@@ -5,12 +5,12 @@ const HomeHero = () => (
 
     <div className="hero">
 
-        <section className="hero__section">
+        <section className="hero__content">
             <h1 id="hometitle" className="hero__title">VanVisual</h1>
             <p className="hero__subtitle hero__subtitle--1">Website Design</p>
             <p className="hero__subtitle">We are a team of designers and developers dedicated to helping businesses create and build their onlone presence through visual appealing websites.</p>
         </section>
-        <div className="hero__section2">
+        <div className="hero__content2 hidden-mobile">
             <p className="hero__subtitle">OUR WORK</p>
             <div className="hero__group">
                 <p className="hero__subtitle">Great work gets result</p>

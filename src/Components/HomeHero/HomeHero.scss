@@ -31,9 +31,11 @@
         }
     }
 
-    &__section {
+    &__content {
         flex-direction: column;
         display: flex;
+        padding: 1rem;
+        padding-top: 3rem;
 
         @include tablet {
             padding: 5rem;
@@ -45,7 +47,7 @@
         }
     }
 
-    &__section2 {
+    &__content2 {
         display: flex;
         padding: 4rem 0 0 0;
         flex-direction: column;
@@ -58,6 +60,16 @@
 
         @include desktop {
             padding: 0 5rem;
+        }
+    }
+
+
+
+    .hidden-mobile {
+        display: none;
+
+        @include tablet {
+            display: flex;
         }
     }
 
@@ -85,8 +97,12 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 4rem;
+    height: 1rem;
     // transform: rotateY(180deg) rotateX(180deg);
+
+    @include tablet {
+        height: 4rem;
+    }
 }
 
 .custom-shape .shape-fill {

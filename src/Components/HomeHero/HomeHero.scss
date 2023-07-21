@@ -6,10 +6,9 @@
 
 
 .hero {
-    background: radial-gradient(133.13% 119.74% at 72.64% 116.81%, #0FF 0%, #7000FF 94.01%);
-    // background: linear-gradient(135deg, #00FFFF 0%, #7000FF 45.8333%, #40005E 60.9375%, #5C01BC 97.3958%);
-    // padding: 5rem 1rem;
-    color: white;
+
+    background: linear-gradient(45deg, rgba(40, 166, 255, 1) 0%, rgba(39, 166, 255, 1) 9%, rgba(77, 77, 255, 1) 79%);
+
 
     @include tablet {
         // padding: 5rem 2rem;
@@ -61,4 +60,26 @@
         align-items: center;
     }
 
+}
+
+
+
+
+.custom-shape {
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 80px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape .shape-fill {
+    fill: #FFFFFF;
 }

@@ -9,6 +9,11 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <HomeHero />
+
+      <div className='space'>
+
+
+      </div>
     </div>
   )
 };

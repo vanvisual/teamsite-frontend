@@ -3,17 +3,20 @@
 @use '../../styles/mixins.scss' as *;
 @use '../../styles/fontsandconversions.scss' as *;
 
+
+
 .hero {
-    background: linear-gradient(90deg, $logo-van, $logo-vis);
-    padding: 5rem 1rem;
+    background: radial-gradient(133.13% 119.74% at 72.64% 116.81%, #0FF 0%, #7000FF 94.01%);
+    // background: linear-gradient(135deg, #00FFFF 0%, #7000FF 45.8333%, #40005E 60.9375%, #5C01BC 97.3958%);
+    // padding: 5rem 1rem;
     color: white;
 
     @include tablet {
-        padding: 5rem 2rem;
+        // padding: 5rem 2rem;
     }
 
     @include desktop {
-        padding: 5rem 10%;
+        // padding: 5rem 10%;
     }
 
     &__title {

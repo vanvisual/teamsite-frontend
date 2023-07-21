@@ -2,3 +2,22 @@
 @use '../../styles/colours.scss' as *;
 @use '../../styles/mixins.scss' as *;
 @use '../../styles/fontsandconversions.scss' as *;
+
+.contact {
+    &__hero {
+        background-color: rebeccapurple;
+        @include section-padding;
+        @include padding-top-bottom(4rem, 4rem);
+        color: white;
+    }
+    &__title {
+        font-size: $px28;
+        margin-bottom: 1rem;
+    }
+    &__group{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        align-items: center;
+    }
+}

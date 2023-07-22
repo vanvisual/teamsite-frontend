@@ -7,26 +7,50 @@
 
     display: flex;
     flex-wrap: wrap;
+    background: $improvement-bg-mob;
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
 
-    &__subtitle {
+    @include tablet {
+        background-color: $page;
+    }
+
+    &__title {
+        color: $logo-van;
+        font-weight: 500;
+        font-size: 1rem;
         flex-basis: 100%;
         text-align: center;
+
+        @include tablet {
+            font-size: 2rem;
+        }
     }
 
     &__card {
+        font-size: $px22;
         width: 26.625rem;
-        flex-basis: calc(33% - 2rem);
+        height: 20rem;
+        flex-basis: 100%;
         box-sizing: border-box;
-        height: 27.0625rem;
-        background-color: red;
+        background: $page;
         padding: 2rem;
         gap: 2rem;
         border-radius: $px20;
         box-shadow: $shadow-card;
 
-        background: rgba(195, 195, 195, 0.2);
+        @include tablet {
+            font-size: $px24;
+            height: 27.0625rem;
+            flex-basis: calc(33% - 2rem);
+        }
+    }
+
+    &__subtitle {
+        padding: 1rem 0;
+        color: $improvement-subtitle;
+        font-size: $px20;
+        font-size: 400;
     }
 }

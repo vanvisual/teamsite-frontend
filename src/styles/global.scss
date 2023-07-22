@@ -1,6 +1,11 @@
 // @use './mixins.scss' as *;
 
 @use './colours.scss' as *;
+@use './fontsandconversions.scss' as *;
+
+* {
+    font-family: 'Barlow', sans-serif;
+}
 
 body {
     background-color: $page;

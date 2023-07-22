@@ -9,10 +9,20 @@
 
     // background: linear-gradient(45deg, rgba(40, 166, 255, 1) 0%, rgba(39, 166, 255, 1) 9%, rgba(77, 77, 255, 1) 79%);
     color: $page;
-    background: url('../../assets/background/hero_bg.svg');
+    height: 27.0625rem;
+    background: url('../../assets/background/hero_bg_mobile.svg');
     background-position: center center;
     background-size: cover;
-    height: 55rem;
+    background-color: $hero-bg;
+
+    @include tablet {
+        height: 55rem;
+        background-color: $page;
+        background: url('../../assets/background/hero_bg.svg');
+        background-position: center center;
+        background-size: cover;
+
+    }
 
     &__title {
         font-size: 1.2rem;

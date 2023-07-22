@@ -3,17 +3,17 @@ import arrow from "../../assets/icons/arrow.png";
 
 const HomeHero = () => (
 
-    <div className="hero">
+    <div id="c-homehero">
 
-        <section className="hero__content">
-            <h1 id="hometitle" className="hero__title">VanVisual</h1>
-            <p className="hero__subtitle hero__subtitle--1">Website Design</p>
-            <p className="hero__subtitle">We are a team of designers and developers dedicated to helping businesses create and build their onlone presence through visual appealing websites.</p>
+        <section className="hh-card">
+            <h1 id="hometitle" className="hh-card__title">VanVisual</h1>
+            <p className="hh-card__subtitle hh-card__subtitle--1">Website Design</p>
+            <p className="hh-card__description">We are a team of designers and developers dedicated to helping businesses create and build their onlone presence through visual appealing websites.</p>
         </section>
-        <div className="hero__content2 hidden-mobile">
-            <p className="hero__subtitle">OUR WORK</p>
-            <div className="hero__group">
-                <p className="hero__subtitle">Great work gets result</p>
+        <div className="hh-card-2 hidden-mobile">
+            <p className="hh-card-2__subtitle">OUR WORK</p>
+            <div className="hh-card-2__group">
+                <p className="hh-card-2__subtitle">Great work gets result</p>
                 <img src={arrow} alt="Arrow Icon" className="hero__icon" />
             </div>
         </div>

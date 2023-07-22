@@ -3,13 +3,13 @@
 @use '../../styles/mixins.scss' as *;
 @use '../../styles/fontsandconversions.scss' as *;
 
-#about-hero {
+#c-abouthero {
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
 }
 
-.about {
+.about-card {
     flex-direction: column;
 
     @include tablet {
@@ -29,4 +29,5 @@
             font-weight: 500;
         }
     }
+
 }

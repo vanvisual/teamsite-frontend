@@ -1,0 +1,32 @@
+@use '../../styles/global.scss' as *;
+@use '../../styles/colours.scss' as *;
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/fontsandconversions.scss' as *;
+
+.improvement {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+
+    &__subtitle {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    &__card {
+        width: 26.625rem;
+        flex-basis: calc(33% - 2rem);
+        box-sizing: border-box;
+        height: 27.0625rem;
+        background-color: red;
+        padding: 2rem;
+        gap: 2rem;
+        border-radius: $px20;
+        box-shadow: $shadow-card;
+
+        background: rgba(195, 195, 195, 0.2);
+    }
+}

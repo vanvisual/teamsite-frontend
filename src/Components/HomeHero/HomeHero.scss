@@ -3,10 +3,9 @@
 @use '../../styles/mixins.scss' as *;
 @use '../../styles/fontsandconversions.scss' as *;
 
-
+// component-homehero
 
 #c-homehero {
-
     // background: linear-gradient(45deg, rgba(40, 166, 255, 1) 0%, rgba(39, 166, 255, 1) 9%, rgba(77, 77, 255, 1) 79%);
     color: $page;
     height: 27.0625rem;
@@ -21,10 +20,11 @@
         background: url('../../assets/background/hero_bg.svg');
         background-position: center center;
         background-size: cover;
-
     }
 
 }
+
+// homehero-cards
 
 .hh-card,
 .hh-card-2 {
@@ -63,10 +63,9 @@
             order: -1;
         }
     }
-
-
-
 }
+
+// homehero-card-2
 
 .hh-card-2 {
     display: flex;

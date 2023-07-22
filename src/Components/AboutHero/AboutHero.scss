@@ -1,0 +1,32 @@
+@use '../../styles/global.scss' as *;
+@use '../../styles/colours.scss' as *;
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/fontsandconversions.scss' as *;
+
+#about-hero {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.about {
+    flex-direction: column;
+
+    @include tablet {
+        display: flex;
+    }
+
+    &__title {
+        color: $logo-van;
+        padding: 1rem 0;
+    }
+
+    &__writing {
+        color: red;
+        font-weight: 400;
+
+        &--upper {
+            font-weight: 500;
+        }
+    }
+}

@@ -79,13 +79,13 @@
 
 
 
-    .hidden-mobile {
-        display: none;
+    // .hidden-mobile {
+    //     display: none;
 
-        @include tablet {
-            display: flex;
-        }
-    }
+    //     @include tablet {
+    //         display: flex;
+    //     }
+    // }
 
     &__icon {
         width: $px25;

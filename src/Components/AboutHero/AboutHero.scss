@@ -3,7 +3,7 @@
 @use '../../styles/mixins.scss' as *;
 @use '../../styles/fontsandconversions.scss' as *;
 
-#about-wrapper {
+#c-abouthero {
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
@@ -29,4 +29,5 @@
             font-weight: 500;
         }
     }
+
 }

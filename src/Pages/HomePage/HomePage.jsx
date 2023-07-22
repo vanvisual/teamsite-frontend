@@ -2,6 +2,7 @@ import './HomePage.scss';
 import { useDocumentTitle } from '../../utils/functions';
 // Components
 import HomeHero from '../../Components/HomeHero/HomeHero';
+import Improvement from '../../Components/Improvement/Improvement';
 
 const HomePage = () => {
   useDocumentTitle('Home - VanVisual.com');
@@ -10,10 +11,8 @@ const HomePage = () => {
     <div className="homepage">
       <HomeHero />
 
-      <div className='space'>
+      <Improvement />
 
-
-      </div>
     </div>
   )
 };

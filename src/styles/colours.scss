@@ -1,3 +1,5 @@
+@use './fontsandconversions.scss' as *;
+
 // Colours
 
 $page: #ffffff;
@@ -47,3 +49,5 @@ $color-s: #1d1e21;
 
 $shadow-main: 0 -0.0625rem 0.625rem rgba(0, 0, 0, 0.1);
 $shadow-sub: 0 -0.0625rem 0.1625rem rgba(0, 0, 0, 0.1);
+
+$shadow-card: $px3 $px5 $px5 0 rgba(112, 0, 255, 0.25);

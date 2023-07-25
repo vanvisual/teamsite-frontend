@@ -1,6 +1,11 @@
 // @use './mixins.scss' as *;
 
 @use './colours.scss' as *;
+@use './fontsandconversions.scss' as *;
+
+* {
+    font-family: 'Barlow', sans-serif;
+}
 
 body {
     background-color: $page;
@@ -26,6 +31,12 @@ p {
 .hidden {
     opacity: 0;
     pointer-events: none;
+}
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+        display: none;
+    }
 }
 
 

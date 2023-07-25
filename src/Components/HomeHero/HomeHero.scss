@@ -3,19 +3,43 @@
 @use '../../styles/mixins.scss' as *;
 @use '../../styles/fontsandconversions.scss' as *;
 
+// component-homehero
 
-
-.hero {
-
-    background: linear-gradient(45deg, rgba(40, 166, 255, 1) 0%, rgba(39, 166, 255, 1) 9%, rgba(77, 77, 255, 1) 79%);
-
+#c-homehero {
+    // background: linear-gradient(45deg, rgba(40, 166, 255, 1) 0%, rgba(39, 166, 255, 1) 9%, rgba(77, 77, 255, 1) 79%);
+    color: $page;
+    height: 27.0625rem;
+    background: url('../../assets/background/hero_bg_mobile.svg');
+    background-position: center center;
+    background-size: cover;
+    background-color: $hero-bg;
 
     @include tablet {
-        // padding: 5rem 2rem;
+        height: 55rem;
+        background-color: $page;
+        background: url('../../assets/background/hero_bg.svg');
+        background-position: center center;
+        background-size: cover;
+    }
+
+}
+
+// homehero-cards
+
+.hh-card,
+.hh-card-2 {
+    flex-direction: column;
+    display: flex;
+    padding: 1rem;
+    padding-top: 3rem;
+
+    @include tablet {
+        padding: 5rem;
     }
 
     @include desktop {
-        // padding: 5rem 10%;
+        padding: 5rem;
+        width: 60%;
     }
 
     &__title {
@@ -29,24 +53,34 @@
         }
     }
 
-    &__subtitle {
+    &__subtitle,
+    &__description {
         @include tablet {
             font-size: 1.3rem;
         }
-    }
 
-    &__section {
-        @include desktop {
-            width: 60%;
+        &--1 {
+            order: -1;
         }
     }
+}
 
-    &__section2 {
-        display: flex;
-        padding: 4rem 0 0 0;
-        flex-direction: column;
-        align-items: flex-end;
-        text-align: start;
+// homehero-card-2
+
+.hh-card-2 {
+    display: flex;
+    padding: 4rem 0 0 0;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: start;
+    width: auto;
+
+    @include tablet {
+        padding: 0 2rem;
+    }
+
+    @include desktop {
+        padding: 0 5rem;
     }
 
     &__icon {
@@ -59,27 +93,30 @@
         gap: 0.2rem;
         align-items: center;
     }
-
 }
 
 
 
 
-.custom-shape {
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
+// .custom-shape {
+//     left: 0;
+//     overflow: hidden;
+//     line-height: 0;
+//     fill: $page;
 
-.custom-shape svg {
-    position: relative;
-    display: block;
-    width: calc(300% + 1.3px);
-    height: 80px;
-    transform: rotateY(180deg);
-}
+//     & svg {
+//         position: relative;
+//         display: block;
+//         width: 100%;
+//         height: 1rem;
+//         // transform: rotateY(180deg) rotateX(180deg);
 
-.custom-shape .shape-fill {
-    fill: #FFFFFF;
-}
+//         @include tablet {
+//             height: 4rem;
+//         }
+//     }
+
+//     & .shape-fill {
+//         fill: $page;
+//     }
+// }

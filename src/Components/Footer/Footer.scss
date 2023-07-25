@@ -10,39 +10,39 @@
     background-color: $footer-bg;
     align-items: center;
 
-    .footlist {
+    &__list {
         display: flex;
         list-style: none;
-        gap: 1rem;
         justify-content: space-between;
         align-items: center;
+        padding: 0rem 3rem;
+        gap: 1rem;
+    }
 
-        &__item {
-            width: 6rem;
-            color: $footer-item;
+    &__item {
+        width: 6rem;
+        color: $footer-item;
+    }
 
-            &--link {
-                text-decoration: none;
-                color: $footer-item;
-                display: flex;
-            }
+    &__link {
+        text-decoration: none;
+        color: $footer-item;
+        display: flex;
+    }
 
-            &--link:hover .letter {
-                color: $logo-van;
-            }
+    &__link:hover .letter {
+        color: $logo-van;
+    }
 
-            &--link:hover .letter:nth-child(odd) {
-                color: $logo-vis;
-            }
+    &__link:hover .letter:nth-child(odd) {
+        color: $logo-vis;
+    }
 
-            &--link:hover .letter:nth-child(2n+5) {
-                color: $logo-van;
-            }
+    &__link:hover .letter:nth-child(2n+5) {
+        color: $logo-van;
+    }
 
-
-            &--link:hover .letter:nth-child(3n+2) {
-                color: $logo-vis;
-            }
-        }
+    &__link:hover .letter:nth-child(3n+2) {
+        color: $logo-vis;
     }
 }

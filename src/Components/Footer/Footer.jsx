@@ -5,18 +5,18 @@ import { animateLetters } from '../../utils/functions';
 
 const Footer = () => {
     useEffect(() => {
-        animateLetters('.footlist__item--link');
+        animateLetters('.footernav__link');
     }, []);
 
     return (
         <div id='footer'>
             <nav className='footernav'>
-                <ul className='footlist'>
-                    <li className='footlist__item'>
-                        <Link to="/projects/" className='footlist__item--link'>Our Work</Link>
+                <ul className='footernav__list'>
+                    <li className='footernav__item'>
+                        <Link to="/projects/" className='footernav__link'>Our Work</Link>
                     </li>
-                    <li className='footlist__item'>
-                        <Link to="/about" className='footlist__item--link'>About Us</Link>
+                    <li className='footernav__item'>
+                        <Link to="/about" className='footernav__link'>About Us</Link>
                     </li>
                 </ul>
             </nav>

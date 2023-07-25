@@ -50,7 +50,7 @@ const Header = () => {
       <nav className={`navbar ${isHamburgerOpen ? 'active' : ''}`}>
         <ul className='navbar__list'>
           <li className={`navbar__item navbar__item-1 navbar__item-1`}>
-            <Link to="/contact" className="navbar__link navbar__link--request" onClick={handleNavLinkClick}>
+            <Link to="/contact" className="navbar__link navbar__link--request btn" onClick={handleNavLinkClick}>
               Request a design
             </Link>
           </li>

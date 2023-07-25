@@ -14,4 +14,21 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    &__title {
+        font-size: $px24;
+        text-align: center;
+
+        @include tablet {
+            font-size: $px40;
+        }
+    }
+
+    &__description {
+        font-size: 1rem;
+
+        @include tablet {
+            font-size: 28px;
+        }
+    }
 }

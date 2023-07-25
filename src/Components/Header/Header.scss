@@ -138,16 +138,9 @@
             }
 
             &--request {
-
+                size: $px18;
                 color: $header-btn;
-                background-color: $header-btn-bg;
-                transition: all 0.125s ease-in-out;
-
-
-                &:hover {
-                    color: $header-btn-bg;
-                    background-color: $header-btn;
-                }
+                font-weight: 600;
             }
         }
     }

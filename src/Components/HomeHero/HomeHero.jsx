@@ -8,12 +8,12 @@ const HomeHero = () => (
         <section className="hh-card">
             <h1 id="hometitle" className="hh-card__title">VanVisual</h1>
             <p className="hh-card__subtitle hh-card__subtitle--1">Website Design</p>
-            <p className="hh-card__description">We are a team of designers and developers dedicated to helping businesses create and build their onlone presence through visual appealing websites.</p>
+            <p className="hh-card__description">We are a team of designers and developers dedicated to helping businesses create and build their online presence through visual appealing websites.</p>
         </section>
         <div className="hh-card-2 hidden-mobile">
             <p className="hh-card-2__subtitle">OUR WORK</p>
             <div className="hh-card-2__group">
-                <p className="hh-card-2__subtitle">Great work gets result</p>
+                <p className="hh-card-2__subtitle">Great work gets results</p>
                 <img src={arrow} alt="Arrow Icon" className="hero__icon" />
             </div>
         </div>

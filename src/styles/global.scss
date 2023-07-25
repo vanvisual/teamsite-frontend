@@ -44,3 +44,20 @@ p {
 .letter {
     transition: all 0.25s cubic-bezier(0.48, 2.06, 0.51, 0.35);
 }
+
+.btn {
+    color: $header-btn;
+    background-color: $header-btn-bg;
+    transition: all 0.125s ease-in-out;
+    size: $px18;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 0.75rem;
+
+
+    &:hover {
+        color: $header-btn-bg;
+        background-color: $header-btn;
+    }
+}

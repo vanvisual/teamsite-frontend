@@ -6,10 +6,16 @@
 .approach {
 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 4rem;
+    flex-direction: column;
+    padding: 1rem;
+
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+
+    }
 
     &__title {
         width: 100%;
@@ -18,20 +24,56 @@
 
     .appr-card {
         display: flex;
+        width: 16.9375rem;
         flex-direction: column;
-        flex-basis: calc(25% - 2rem);
         box-sizing: border-box;
         box-shadow: $shadow-card;
-        padding: 2rem;
         border-radius: 1rem;
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        margin: 1rem;
+
+        @include tablet {
+
+            width: auto;
+            justify-content: center;
+            flex-basis: calc(25% - 4rem);
+            padding: 2rem;
+        }
+
+        &__icon {
+
+            width: $px48;
+            order: -1;
+
+        }
 
         &--first {
             box-shadow: none;
+            margin-left: 0;
+            width: 100%;
         }
 
         &__subtitle {
             margin: 1rem 0;
+            margin-top: 0.25rem;
+
+            &--top {
+                font-size: $px20;
+                order: -1;
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
         }
 
+    }
+
+    .appr-card:nth-child(even) {
+        // margin-left: 2rem;
+        margin-left: auto;
+
+        @include tablet {
+            margin-left: 0;
+        }
     }
 }

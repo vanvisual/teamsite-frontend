@@ -15,11 +15,14 @@
     background-color: $hero-bg;
 
     @include tablet {
+
         height: 55rem;
+        height: 35rem;
         background-color: $page;
         background: url('../../assets/background/hero_bg.svg');
-        background-position: center center;
+        background-position: bottom center;
         background-size: cover;
+        padding: 6rem;
     }
 
 }
@@ -46,17 +49,18 @@
         font-size: 1.2rem;
         padding: 1rem 0;
         font-size: $px40;
-        font-weight: 600;
+        font-weight: 700;
 
         @include tablet {
-            font-size: 2.5rem;
+            font-size: $px100;
         }
     }
 
     &__subtitle,
     &__description {
         @include tablet {
-            font-size: 1.3rem;
+            font-size: $px28;
+            max-width: 42rem;
         }
 
         &--1 {

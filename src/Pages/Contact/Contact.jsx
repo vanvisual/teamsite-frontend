@@ -38,13 +38,14 @@ const Contact = () => {
                 <div className="contact__hero">
                     <h1 className="contact__title">Contact Information</h1>
                     <p className="contact__subtitle">Fill up the form and our Team will get back to you within 24 hours</p>
-                    <div className="contact__group">
+                    {/* Add when the team got an official number */}
+                    {/* <div className="contact__group">
                         <img src={phoneIcon} alt="" className="contact__icon" />
                         <p className="contact__text">+1(604)-520-5555</p>
-                    </div>
+                    </div> */}
                     <div className="contact__group">
                         <img src={emailIcon} alt="" className="contact__icon" />
-                        <p className="contact__text">bniowneoifwon@gmail.com</p>
+                        <p className="contact__text">info@vanvisual.com</p>
                     </div>
                 </div>
                 <div className="contact__form-container">

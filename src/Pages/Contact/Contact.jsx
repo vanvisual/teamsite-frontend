@@ -3,7 +3,13 @@ import {useState} from "react";
 import emailIcon from "../../assets/icons/Email_Icon.svg";
 import phoneIcon from "../../assets/icons/Phone_Icon.svg";
 import FormControl from "../../Components/FormControl/FormControl";
-import { Form } from "react-router-dom";
+import {uid} from "uid";
+// Firebase database 
+import { Database } from "firebase/database";
+import {set, ref} from "firebase/database";
+import { database } from "../../firebase/firebase";
+
+
 const Contact = () => {
     // Form State
     const [fName, setFName] = useState("");
@@ -23,13 +29,13 @@ const Contact = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(services);
-        console.log(fName);
-        console.log(lName);
-        console.log(email);
-        console.log(phone);
-        console.log(services);
-        console.log(message);
+        const uuid = uid();
+        const newClient = {
+            uuid,fName, lName, email, phone, message, service: services
+        }
+        set(ref(database,`/${uuid}`), newClient)
+            .then(()=>console.log("success"))
+            .catch((error)=>console.log("error"))
     }
     return (
         <section className="contact">

@@ -19,7 +19,7 @@ const Approach = () => {
                     delay: 0.2,
                 }} className="appr-card appr-card--first">
                 <h3 className="appr-card__subtitle">Our Design Approach</h3>
-                <p className="appr-card__description">Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <p className="appr-card__description">We use an iterative approach where we start with simple discussions, gather ideas, create sketches and then walk you through the process at each step. If there's not something you are happy with, we can make changes early on.</p>
             </motion.div>
             <motion.article
                 initial={{ opacity: 0 }}

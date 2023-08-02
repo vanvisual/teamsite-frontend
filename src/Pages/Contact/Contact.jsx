@@ -32,7 +32,7 @@ const Contact = () => {
         console.log(message);
     }
     return (
-        // <section className="contact">
+
         <div className="contact">
             {/* Hero */}
             <section className="con-hero">
@@ -75,7 +75,6 @@ const Contact = () => {
                 </form>
             </section>
         </div>
-        // </section>
     )
 }
 

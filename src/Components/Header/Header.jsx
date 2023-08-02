@@ -37,7 +37,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    animateLetters('.link-animate');
+    // animateLetters('.link-animate');
   })
 
   return (

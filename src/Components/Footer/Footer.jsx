@@ -13,14 +13,23 @@ const Footer = () => {
             <nav className='footernav'>
                 <ul className='footernav__list'>
                     <li className='footernav__item'>
-                        <Link to="/projects/" className='footernav__link'>Our Work</Link>
+                        {/* <Link to="/projects/" className='footernav__link'>Our Work</Link> */}
                     </li>
-                    <li className='footernav__item'>
+                    {/* <li className='footernav__item'>
                         <Link to="/about" className='footernav__link'>About Us</Link>
+                    </li> */}
+
+                    <li className='footernav__item'>
+                        <Link to="/contact" className="footernav__link">
+                            Contact
+                        </Link>
                     </li>
+
+
+
                 </ul>
             </nav>
-        </div>
+        </div >
     );
 };
 

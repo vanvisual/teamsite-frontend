@@ -1,4 +1,8 @@
+import { Link } from "react-router-dom";
+
 import "./HomeHero.scss";
+
+
 import arrow from "../../assets/icons/arrow.png";
 
 const HomeHero = () => (
@@ -11,10 +15,14 @@ const HomeHero = () => (
             <p className="hh-card__description">We are a team of designers and developers dedicated to helping businesses create and build their online presence through visual appealing websites.</p>
         </section>
         <div className="hh-card-2 hidden-mobile">
-            <p className="hh-card-2__subtitle hh-card-2__subtitle--top">Our Work</p>
+            {/* <p className="hh-card-2__subtitle hh-card-2__subtitle--top">Our Work</p> */}
             <div className="hh-card-2__group">
                 <p className="hh-card-2__subtitle">Great work gets results</p>
-                <img src={arrow} alt="Arrow Icon" className="hero__icon" />
+
+
+                <Link to="/contact" className="hh-card-2__link">
+                    <img src={arrow} alt="Arrow Icon" className="" />
+                </Link>
             </div>
         </div>
 

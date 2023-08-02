@@ -94,9 +94,11 @@
         padding: 0 5rem;
     }
 
-    &__icon {
-        width: $px25;
-        margin-bottom: -0.1rem;
+    &__link {
+
+        @include tablet {
+            // height: 2.75rem;
+        }
     }
 
     &__group {

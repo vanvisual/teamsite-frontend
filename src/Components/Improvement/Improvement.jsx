@@ -15,7 +15,7 @@ const Improvement = ({ index }) => (
                 }}
                 className="improvement__card">
                 <h3 className='improvement__subtitle'>Custom Web Design</h3>
-                <p>We are a team of local Designers and Web developers solving your web design problems</p>
+                <p className='improvement__description'>We are a team of local Designers and Web developers solving your web design problems</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -27,7 +27,7 @@ const Improvement = ({ index }) => (
 
                 className="improvement__card">
                 <h3 className='improvement__subtitle'>Responsive Design</h3>
-                <p>We are a team of local Designers and Web developers solving your web design problems</p>
+                <p className='improvement__description'>We are a team of local Designers and Web developers solving your web design problems</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -38,7 +38,7 @@ const Improvement = ({ index }) => (
                 }}
                 className="improvement__card">
                 <h3 className='improvement__subtitle'>Content Management System</h3>
-                <p>We are a team of local Designers and Web developers solving your web design problems</p>
+                <p className='improvement__description'>We are a team of local Designers and Web developers solving your web design problems</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -49,7 +49,7 @@ const Improvement = ({ index }) => (
                     // repeat: Infinity
                 }} className="improvement__card">
                 <h3 className='improvement__subtitle'>SEO</h3>
-                <p>We are a team of local Designers and Web developers solving your web design problems</p>
+                <p className='improvement__description'>We are a team of local Designers and Web developers solving your web design problems</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -58,7 +58,7 @@ const Improvement = ({ index }) => (
                     delay: 0.2,
                 }} className="improvement__card">
                 <h3 className='improvement__subtitle'>Increased Conversion Rates</h3>
-                <p>We are a team of local Designers and Web developers solving your web design problems</p>
+                <p className='improvement__description'>We are a team of local Designers and Web developers solving your web design problems</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -69,7 +69,7 @@ const Improvement = ({ index }) => (
 
                 className="improvement__card">
                 <h3 className='improvement__subtitle'>Usability & Accessibility</h3>
-                <p>We are a team of local Designers and Web developers solving your web design problems</p>
+                <p className='improvement__description'>We are a team of local Designers and Web developers solving your web design problems</p>
             </motion.article>
         </section>
     </div>

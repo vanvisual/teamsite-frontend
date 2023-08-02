@@ -39,19 +39,18 @@
     .form-container {
         @include section-padding;
         @include padding-top-bottom(2rem, 2rem);
-    }
 
-    .form-head {
-        &__description {
+        &__title {
             font-size: $px14;
             margin-bottom: 0.5rem;
+            font-weight: 400;
 
             @include tablet {
                 font-size: $px16;
             }
         }
 
-        &__title {
+        &__description {
             font-size: $px20;
             font-weight: 600;
             margin-bottom: 1.5rem;

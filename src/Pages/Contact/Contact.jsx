@@ -37,24 +37,22 @@ const Contact = () => {
             {/* Hero */}
             <section className="con-hero">
                 <h1 className="con-hero__title">Contact Information</h1>
-                <p className="con-hero__description">Fill up the form and our Team will get back to you within 24 hours</p>
-                {/* Add when the team got an official number */}
+                <p className="con-hero__description">Fill in the form and our Team will get back to you within 24 hours</p>
+                {/* Add when the team has an official number */}
                 {/* <div className="contact__group">
                         <img src={phoneIcon} alt="" className="contact__icon" />
                         <p className="contact__text">+1(604)-520-5555</p>
                     </div> */}
                 <div className="con-hero__group">
-                    <img src={emailIcon} alt="" className="contact__icon" />
+                    <img src={emailIcon} alt="" className="con-hero__icon" />
                     <p className="con-hero__description"><Link to='info@vanvisual.com' className="con-hero__description--link">info@vanvisual.com</Link></p>
                 </div>
             </section>
 
-            <div className="form-container">
+            <section className="form-container">
                 {/* Contact Header */}
-                <div className="form-head">
-                    <p className="form-head__description">REQUEST A DESIGN</p>
-                    <p className="form-head__title">Any questions? Send us a message</p>
-                </div>
+                <h3 className="form-container__title">REQUEST A DESIGN</h3>
+                <p className="form-container__description">Any questions? Send us a message</p>
                 {/* Contact Form */}
                 <form onSubmit={handleSubmit} className="con-form">
                     <FormControl label="First Name" type="text" placeholder="John" value={fName} setValue={setFName} />
@@ -63,7 +61,7 @@ const Contact = () => {
                     <FormControl label="Phone" type="text" placeholder="7780001111" value={phone} setValue={setPhone} />
                     {/* Service Form */}
                     <div className="services">
-                        <p className="services__title">What kind of services do you need?</p>
+                        <h3 className="services__title">What kind of services do you need?</h3>
                         <div className="services__group">
                             <FormControl label="Web Design" value="Web Design" id="webdesign" type="checkbox" setValue={handleServices} />
                             <FormControl label="Maintenance" value="Maintenance" id="maintenance" type="checkbox" setValue={handleServices} />
@@ -75,7 +73,7 @@ const Contact = () => {
                     <FormControl label="Message" type="text" placeholder="I need a website for a newly opening restaurant" value={message} setValue={setMessage} />
                     <button className="con-form__btn">Send Message</button>
                 </form>
-            </div>
+            </section>
         </div>
         // </section>
     )

@@ -60,15 +60,15 @@ const Contact = () => {
                     <FormControl label="Email" type="email" placeholder="john@gmail.com" value={email} setValue={setEmail} />
                     <FormControl label="Phone" type="text" placeholder="7780001111" value={phone} setValue={setPhone} />
                     {/* Service Form */}
-                    <div className="services">
-                        <h3 className="services__title">What kind of services do you need?</h3>
-                        <div className="services__group">
-                            <FormControl label="Web Design" value="Web Design" id="webdesign" type="checkbox" setValue={handleServices} />
-                            <FormControl label="Maintenance" value="Maintenance" id="maintenance" type="checkbox" setValue={handleServices} />
-                            <FormControl label="eCommerce" value="eCommerce" id="eCommerce" type="checkbox" setValue={handleServices} />
-                            <FormControl label="SEO" value="SEO" id="seo" type="checkbox" setValue={handleServices} />
-                            <FormControl label="Web Development" value="Web Development" id="webdevelopment" type="checkbox" setValue={handleServices} />
-                        </div>
+                    <div className="con-form__services">
+                        <h3 className="con-form__services--title">What kind of services do you need?</h3>
+
+                        <FormControl label="Web Design" value="Web Design" id="webdesign" type="checkbox" setValue={handleServices} />
+                        <FormControl label="Maintenance" value="Maintenance" id="maintenance" type="checkbox" setValue={handleServices} />
+                        <FormControl label="eCommerce" value="eCommerce" id="eCommerce" type="checkbox" setValue={handleServices} />
+                        <FormControl label="SEO" value="SEO" id="seo" type="checkbox" setValue={handleServices} />
+                        <FormControl label="Web Development" value="Web Development" id="webdevelopment" type="checkbox" setValue={handleServices} />
+
                     </div>
                     <FormControl label="Message" type="text" placeholder="I need a website for a newly opening restaurant" value={message} setValue={setMessage} />
                     <button className="con-form__btn">Send Message</button>

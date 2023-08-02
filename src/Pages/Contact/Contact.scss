@@ -63,10 +63,10 @@
 
     .con-form {
 
-        .services {
+        &__services {
             margin-bottom: 2rem;
 
-            &__title {
+            &--title {
                 font-weight: 600;
                 margin-bottom: 0.7rem;
             }

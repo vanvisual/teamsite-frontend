@@ -13,7 +13,7 @@
     padding: 2rem;
     overflow: hidden;
 
-    @include tablet {
+    @include desktop {
         background-color: $page;
     }
 
@@ -24,7 +24,7 @@
         flex-basis: 100%;
         text-align: center;
 
-        @include tablet {
+        @include desktop {
             font-size: 2rem;
             color: $improvement-title-pc;
         }
@@ -42,7 +42,7 @@
         border-radius: $px20;
         box-shadow: $shadow-card;
 
-        @include tablet {
+        @include desktop {
             font-size: $px24;
             height: 27.0625rem;
             flex-basis: calc(33% - 2rem);
@@ -55,7 +55,7 @@
         font-size: $px20;
         font-weight: 400;
 
-        @include tablet {
+        @include desktop {
             color: $improvement-title-pc;
             font-size: 2rem;
         }
@@ -64,7 +64,7 @@
     &__description {
         font-weight: 400;
 
-        @include tablet {
+        @include desktop {
             font-size: $px24;
             color: $improvement-description-pc;
         }

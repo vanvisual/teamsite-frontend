@@ -87,4 +87,20 @@
             }
         }
     }
+    &__success {
+        background-color: #e9fce9;
+        color: green;
+        padding: 0.3rem 0.7rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+    &__error {
+        background-color: #FFCCCB;
+        color: darkred;
+        padding: 0.3rem 0.7rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
 }

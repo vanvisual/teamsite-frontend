@@ -60,14 +60,14 @@ const Header = () => {
             </NavLink>
           </li>
           <li className={`navbar__item ${delayedItems.includes(2) ? 'delay' : ''}`}>
-            <NavLink to="/projects/" className="navbar__link link-animate" onClick={handleNavLinkClick} >
+            {/* <NavLink to="/projects/" className="navbar__link link-animate" onClick={handleNavLinkClick} >
               Our Work
-            </NavLink>
+            </NavLink> */}
           </li>
           <li className={`navbar__item ${delayedItems.includes(3) ? 'delay' : ''}`}>
-            <NavLink to="/about" className="navbar__link link-animate" onClick={handleNavLinkClick} >
+            {/* <NavLink to="/about" className="navbar__link link-animate" onClick={handleNavLinkClick} >
               About Us
-            </NavLink>
+            </NavLink> */}
           </li>
         </ul>
       </nav>

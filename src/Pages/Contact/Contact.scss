@@ -4,7 +4,7 @@
 @use '../../styles/fontsandconversions.scss' as *;
 
 .contact {
-    &__hero {
+    .con-hero {
         background-image: url("../../assets/background/contact_bg.jpg");
         background-position: center;
         background-size: cover;
@@ -12,57 +12,80 @@
         @include padding-top-bottom(4rem, 4rem);
         box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
         color: white;
+
         @include desktop {
             @include padding-top-bottom(6rem, 6rem);
         }
+
+        &__title {
+            font-size: $px28;
+            margin-bottom: 1rem;
+        }
+
+        &__group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            align-items: center;
+        }
+
+        &__description--link {
+            text-decoration: none;
+            color: $hero-bg;
+        }
+
     }
-    &__title {
-        font-size: $px28;
-        margin-bottom: 1rem;
-    }
-    &__group{
-        display: flex;
-        gap: 1rem;
-        margin-top: 1.5rem;
-        align-items: center;
-    }
-    &__form-container {
+
+    .form-container {
         @include section-padding;
         @include padding-top-bottom(2rem, 2rem);
     }
-    &__form__text {
-        font-size: $px14;
-        margin-bottom: 0.5rem;
-        @include tablet {
-            font-size: $px16;
+
+    .form-head {
+        &__description {
+            font-size: $px14;
+            margin-bottom: 0.5rem;
+
+            @include tablet {
+                font-size: $px16;
+            }
         }
-    }
-    &__form__title {
-        font-size: $px20;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
-        @include tablet {
-            font-size: $px28;
-        }
-    }
-    &__form__services {
-        margin-bottom: 2rem;
+
         &__title {
+            font-size: $px20;
             font-weight: 600;
-            margin-bottom: 0.7rem;
+            margin-bottom: 1.5rem;
+
+            @include tablet {
+                font-size: $px28;
+            }
         }
     }
-    &__form__btn {
-        background-color: black;
-        color: white;
-        border: none;
-        padding: 0.3rem 1.3rem 0.4rem 1.3rem;
-        border-radius: 15px;
-        cursor: pointer;
-        &:hover {
-            background-color: $color-a;
-            scale: 0.9;
-            transition: all 0.5s;
+
+    .con-form {
+
+        .services {
+            margin-bottom: 2rem;
+
+            &__title {
+                font-weight: 600;
+                margin-bottom: 0.7rem;
+            }
+        }
+
+        &__btn {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 0.3rem 1.3rem 0.4rem 1.3rem;
+            border-radius: 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-a;
+                scale: 0.9;
+                transition: all 0.5s;
+            }
         }
     }
 }

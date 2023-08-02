@@ -1,9 +1,9 @@
 import "./Contact.scss";
-import {useState} from "react";
+import { useState } from "react";
 import emailIcon from "../../assets/icons/Email_Icon.svg";
 import phoneIcon from "../../assets/icons/Phone_Icon.svg";
 import FormControl from "../../Components/FormControl/FormControl";
-import { Form } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 const Contact = () => {
     // Form State
     const [fName, setFName] = useState("");
@@ -32,51 +32,52 @@ const Contact = () => {
         console.log(message);
     }
     return (
-        <section className="contact">
-            <div className="contact__container">
-                {/* Hero */}
-                <div className="contact__hero">
-                    <h1 className="contact__title">Contact Information</h1>
-                    <p className="contact__subtitle">Fill up the form and our Team will get back to you within 24 hours</p>
-                    {/* Add when the team got an official number */}
-                    {/* <div className="contact__group">
+        // <section className="contact">
+        <div className="contact">
+            {/* Hero */}
+            <section className="con-hero">
+                <h1 className="con-hero__title">Contact Information</h1>
+                <p className="con-hero__description">Fill up the form and our Team will get back to you within 24 hours</p>
+                {/* Add when the team got an official number */}
+                {/* <div className="contact__group">
                         <img src={phoneIcon} alt="" className="contact__icon" />
                         <p className="contact__text">+1(604)-520-5555</p>
                     </div> */}
-                    <div className="contact__group">
-                        <img src={emailIcon} alt="" className="contact__icon" />
-                        <p className="contact__text">info@vanvisual.com</p>
-                    </div>
+                <div className="con-hero__group">
+                    <img src={emailIcon} alt="" className="contact__icon" />
+                    <p className="con-hero__description"><Link to='info@vanvisual.com' className="con-hero__description--link">info@vanvisual.com</Link></p>
                 </div>
-                <div className="contact__form-container">
-                    {/* Contact Header */}
-                    <div className="contact__form__header">
-                        <p className="contact__form__text">REQUEST A DESIGN</p>
-                        <p className="contact__form__title">Any questions? Send us a message</p>
-                    </div>
-                    {/* Contact Form */}
-                    <form onSubmit={handleSubmit} className="contact__form">
-                        <FormControl label="First Name" type="text" placeholder="John" value={fName} setValue={setFName}/>
-                        <FormControl label="Last Name" type="text" placeholder="Doe" value={lName} setValue={setLName}/>
-                        <FormControl label="Email" type="email" placeholder="john@gmail.com" value={email} setValue={setEmail}/>
-                        <FormControl label="Phone" type="text" placeholder="7780001111" value={phone} setValue={setPhone}/>
-                        {/* Service Form */}
-                        <div className="contact__form__services">
-                            <p className="contact__form__services__title">What kind of services do you need?</p>
-                            <div className="contact_form__services__container">
-                                <FormControl label="Web Design" value="Web Design" id="webdesign" type="checkbox" setValue={handleServices}/>
-                                <FormControl label="Maintenance" value="Maintenance" id="maintenance" type="checkbox" setValue={handleServices}/>
-                                <FormControl label="eCommerce" value="eCommerce" id="eCommerce" type="checkbox" setValue={handleServices}/>
-                                <FormControl label="SEO" value="SEO" id="seo" type="checkbox" setValue={handleServices}/>
-                                <FormControl label="Web Development" value="Web Development" id="webdevelopment" type="checkbox" setValue={handleServices}/>
-                            </div>
+            </section>
+
+            <div className="form-container">
+                {/* Contact Header */}
+                <div className="form-head">
+                    <p className="form-head__description">REQUEST A DESIGN</p>
+                    <p className="form-head__title">Any questions? Send us a message</p>
+                </div>
+                {/* Contact Form */}
+                <form onSubmit={handleSubmit} className="con-form">
+                    <FormControl label="First Name" type="text" placeholder="John" value={fName} setValue={setFName} />
+                    <FormControl label="Last Name" type="text" placeholder="Doe" value={lName} setValue={setLName} />
+                    <FormControl label="Email" type="email" placeholder="john@gmail.com" value={email} setValue={setEmail} />
+                    <FormControl label="Phone" type="text" placeholder="7780001111" value={phone} setValue={setPhone} />
+                    {/* Service Form */}
+                    <div className="services">
+                        <p className="services__title">What kind of services do you need?</p>
+                        <div className="services__group">
+                            <FormControl label="Web Design" value="Web Design" id="webdesign" type="checkbox" setValue={handleServices} />
+                            <FormControl label="Maintenance" value="Maintenance" id="maintenance" type="checkbox" setValue={handleServices} />
+                            <FormControl label="eCommerce" value="eCommerce" id="eCommerce" type="checkbox" setValue={handleServices} />
+                            <FormControl label="SEO" value="SEO" id="seo" type="checkbox" setValue={handleServices} />
+                            <FormControl label="Web Development" value="Web Development" id="webdevelopment" type="checkbox" setValue={handleServices} />
                         </div>
-                        <FormControl label="Message" type="text" placeholder="I need a website for a newly opening restaurant" value={message} setValue={setMessage}/>
-                        <button className="contact__form__btn">Send Message</button>
-                    </form>
-                </div>
+                    </div>
+                    <FormControl label="Message" type="text" placeholder="I need a website for a newly opening restaurant" value={message} setValue={setMessage} />
+                    <button className="con-form__btn">Send Message</button>
+                </form>
             </div>
-        </section>
+        </div>
+        // </section>
     )
 }
 

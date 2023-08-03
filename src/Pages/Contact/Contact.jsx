@@ -4,9 +4,9 @@ import emailIcon from "../../assets/icons/Email_Icon.svg";
 import { Link } from "react-router-dom";
 import phoneIcon from "../../assets/icons/Phone_Icon.svg";
 import FormControl from "../../Components/FormControl/FormControl";
-import {uid} from "uid";
+import { uid } from "uid";
 // Firebase database 
-import {set, ref} from "firebase/database";
+import { set, ref } from "firebase/database";
 import { database } from "../../firebase/firebase";
 
 
@@ -24,18 +24,18 @@ const Contact = () => {
 
 
     const handleServices = (e) => {
-        const {name, checked} = e.target;
-        setServices((prev) => ({...prev, [name]: checked}))
+        const { name, checked } = e.target;
+        setServices((prev) => ({ ...prev, [name]: checked }))
     }
     // Push client data to the database
     const handleSubmit = (e) => {
         e.preventDefault();
         const uuid = uid();
         const newClient = {
-            uuid,fName, lName, email, phone, message, service: services
+            uuid, fName, lName, email, phone, message, service: services
         }
-        set(ref(database,`/${uuid}`), newClient)
-            .then(()=>{
+        set(ref(database, `/${uuid}`), newClient)
+            .then(() => {
                 setLName("");
                 setFName("");
                 setEmail("");
@@ -47,7 +47,7 @@ const Contact = () => {
                     setSuccess("")
                 }, 5000)
             })
-            .catch((error)=>{
+            .catch((error) => {
                 setError("Unable to submit your requestion right now. Please try again later.")
             })
     }
@@ -76,8 +76,8 @@ const Contact = () => {
                 {/* Contact Form */}
                 <form onSubmit={handleSubmit} className="con-form">
                     {/* Show status if it is successful or not */}
-                    {success && <p className="contact__success">{success}</p>}
-                    {error && <p className="contact__error">{error}</p>}
+                    {success && <p className="con-form__success">{success}</p>}
+                    {error && <p className="con-form__error">{error}</p>}
                     <FormControl label="First Name" type="text" placeholder="John" value={fName} setValue={setFName} />
                     <FormControl label="Last Name" type="text" placeholder="Doe" value={lName} setValue={setLName} />
                     <FormControl label="Email" type="email" placeholder="john@gmail.com" value={email} setValue={setEmail} />
@@ -86,11 +86,11 @@ const Contact = () => {
                     <div className="con-form__services">
                         <h3 className="con-form__services--title">What kind of services do you need?</h3>
 
-                        <FormControl label="Web Design" services={services} name="webdesign" id="webdesign" type="checkbox" setValue={handleServices}/>
-                                <FormControl label="Maintenance" services={services} name="maintenance" id="maintenance" type="checkbox" setValue={handleServices}/>
-                                <FormControl label="eCommerce" services={services} name="ecommerce" id="ecommerce" type="checkbox" setValue={handleServices}/>
-                                <FormControl label="SEO" name="seo" services={services} id="seo" type="checkbox" setValue={handleServices}/>
-                                <FormControl label="Web Development" services={services} name="webdevelopment" id="webdevelopment" type="checkbox" setValue={handleServices}/>
+                        <FormControl label="Web Design" services={services} name="webdesign" id="webdesign" type="checkbox" setValue={handleServices} />
+                        <FormControl label="Maintenance" services={services} name="maintenance" id="maintenance" type="checkbox" setValue={handleServices} />
+                        <FormControl label="eCommerce" services={services} name="ecommerce" id="ecommerce" type="checkbox" setValue={handleServices} />
+                        <FormControl label="SEO" name="seo" services={services} id="seo" type="checkbox" setValue={handleServices} />
+                        <FormControl label="Web Development" services={services} name="webdevelopment" id="webdevelopment" type="checkbox" setValue={handleServices} />
 
                     </div>
                     <FormControl label="Message" type="text" placeholder="I need a website for a newly opening restaurant" value={message} setValue={setMessage} />

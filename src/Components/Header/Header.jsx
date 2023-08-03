@@ -55,9 +55,10 @@ const Header = () => {
             </Link>
           </li>
           <li className={`navbar__item navbar__item-2 ${delayedItems.includes(1) ? 'delay' : ''}`}>
-            <NavLink to="/" className="navbar__link link-animate" onClick={handleNavLinkClick} >
+            {/* Remove Home Link for now as there is only one lin which is not neccessary */}
+            {/* <NavLink to="/" className="navbar__link link-animate" onClick={handleNavLinkClick} >
               Home
-            </NavLink>
+            </NavLink> */}
           </li>
           <li className={`navbar__item ${delayedItems.includes(2) ? 'delay' : ''}`}>
             {/* <NavLink to="/projects/" className="navbar__link link-animate" onClick={handleNavLinkClick} >

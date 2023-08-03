@@ -75,7 +75,7 @@ const Contact = () => {
                     </div> */}
                 <div className="con-hero__group">
                     <img src={emailIcon} alt="" className="con-hero__icon" />
-                    <p className="con-hero__description"><Link to='info@vanvisual.com' className="con-hero__description--link">info@vanvisual.com</Link></p>
+                    <p className="con-hero__description"><a href='mailto:info@vanvisual.com' className="con-hero__description--link">info@vanvisual.com</a></p>
                 </div>
             </section>
 

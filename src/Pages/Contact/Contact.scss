@@ -59,48 +59,51 @@
                 font-size: $px28;
             }
         }
-    }
 
-    .con-form {
+        .con-form {
 
-        &__services {
-            margin-bottom: 2rem;
+            &__services {
+                margin-bottom: 2rem;
 
-            &--title {
-                font-weight: 600;
-                margin-bottom: 0.7rem;
+                &--title {
+                    font-weight: 600;
+                    margin-bottom: 0.7rem;
+                }
             }
-        }
 
-        &__btn {
-            background-color: black;
-            color: white;
-            border: none;
-            padding: 0.3rem 1.3rem 0.4rem 1.3rem;
-            border-radius: 15px;
-            cursor: pointer;
+            &__btn {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 0.3rem 1.3rem 0.4rem 1.3rem;
+                border-radius: 15px;
+                cursor: pointer;
 
-            &:hover {
-                background-color: $color-a;
-                scale: 0.9;
-                transition: all 0.5s;
+                &:hover {
+                    background-color: $color-a;
+                    scale: 0.9;
+                    transition: all 0.5s;
+                }
             }
+
+            &__success {
+                background-color: #e9fce9;
+                color: green;
+                padding: 0.3rem 0.7rem;
+                border-radius: 5px;
+                margin-bottom: 1rem;
+                font-size: 0.9rem;
+            }
+
+            &__error {
+                background-color: #FFCCCB;
+                color: darkred;
+                padding: 0.3rem 0.7rem;
+                border-radius: 5px;
+                margin-bottom: 1rem;
+                font-size: 0.9rem;
+            }
+
         }
-    }
-    &__success {
-        background-color: #e9fce9;
-        color: green;
-        padding: 0.3rem 0.7rem;
-        border-radius: 5px;
-        margin-bottom: 1rem;
-        font-size: 0.9rem;
-    }
-    &__error {
-        background-color: #FFCCCB;
-        color: darkred;
-        padding: 0.3rem 0.7rem;
-        border-radius: 5px;
-        margin-bottom: 1rem;
-        font-size: 0.9rem;
     }
 }

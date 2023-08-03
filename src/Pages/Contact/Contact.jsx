@@ -8,8 +8,7 @@ import { uid } from "uid";
 // Firebase database 
 import { set, ref } from "firebase/database";
 import { database } from "../../firebase/firebase";
-
-
+import { useDocumentTitle } from "../../utils/functions";
 
 
 const Contact = () => {

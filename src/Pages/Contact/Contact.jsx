@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import phoneIcon from "../../assets/icons/Phone_Icon.svg";
 import FormControl from "../../Components/FormControl/FormControl";
 import {uid} from "uid";
+import {motion} from "framer-motion";
 // Firebase database 
 import {set, ref} from "firebase/database";
 import { database } from "../../firebase/firebase";
@@ -53,7 +54,11 @@ const Contact = () => {
     }
     return (
 
-        <div className="contact">
+        <motion.div 
+            className="contact"
+            initial={{opacity: 0}}
+            animate={{opacity: 1, transition:{duration: 2}}}
+        >
             {/* Hero */}
             <section className="con-hero">
                 <h1 className="con-hero__title">Contact Information</h1>
@@ -97,7 +102,7 @@ const Contact = () => {
                     <button className="con-form__btn">Send Message</button>
                 </form>
             </section>
-        </div>
+        </motion.div>
     )
 }
 

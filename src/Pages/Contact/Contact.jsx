@@ -10,7 +10,13 @@ import { set, ref } from "firebase/database";
 import { database } from "../../firebase/firebase";
 
 
+
+
 const Contact = () => {
+
+    useDocumentTitle('Contact - VanVisual.com');
+
+
     // Form State
     const [fName, setFName] = useState("");
     const [lName, setLName] = useState("");

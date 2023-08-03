@@ -19,7 +19,7 @@ const Approach = () => {
                     delay: 0.2,
                 }} className="appr-card appr-card--first">
                 <h3 className="appr-card__subtitle">Our Design Approach</h3>
-                <p className="appr-card__description">We use an iterative approach where we start with simple discussions, gather ideas, create sketches and then walk you through the process at each step. If there's not something you are happy with, we can make changes early on.</p>
+                <p className="appr-card__description">Our creative process begins with you. Tell us your goals, from functionalities to branding, we can fill in the blanks together. From there we follow a three step process.</p>
             </motion.div>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -30,7 +30,7 @@ const Approach = () => {
                 <img src={discover} alt="Discover Icon" className="appr-card__icon" />
                 <h3 className="appr-card__subtitle">Discover</h3>
                 <p className="appr-card__subtitle--top">01</p>
-                <p className="appr-card__description">Our team analyze your target audience, industry trends, and competitors to uncover unique insights that will shape the direction of your digital presence.</p>
+                <p className="appr-card__description">Our team analyzes your goals, target audience, industry trends, and competitors to uncover unique insights that will shape the direction of your digital presence.</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}

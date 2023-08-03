@@ -15,7 +15,7 @@ const Improvement = ({ index }) => (
                 }}
                 className="improvement__card">
                 <h3 className='improvement__subtitle'>Custom Web Design</h3>
-                <p className='improvement__description'>We are a team of local Designers and Web developers solving your web design problems. We can design and build a website in a short turn around.</p>
+                <p className='improvement__description'>We tell stories and bring your vision to life. Our designs guide users to action.</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -27,7 +27,7 @@ const Improvement = ({ index }) => (
 
                 className="improvement__card">
                 <h3 className='improvement__subtitle'>Responsive Design</h3>
-                <p className='improvement__description'>With numerous technological devices, it's difficult to know who may view your website! With our industry leading code, we can create websites which will be asthetically pleasing on all devices.</p>
+                <p className='improvement__description'>We maintain mobile first and responsive designs, available to users from all viewports.</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -38,7 +38,7 @@ const Improvement = ({ index }) => (
                 }}
                 className="improvement__card">
                 <h3 className='improvement__subtitle'>Content Management System</h3>
-                <p className='improvement__description'>At additional cost, we can create websites which will have their own content management system and allow you to be able to adjust content quickly and easily.</p>
+                <p className='improvement__description'>A Custom CMS gives you the control you need over your site, no technical know-how required.</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -49,7 +49,7 @@ const Improvement = ({ index }) => (
                     // repeat: Infinity
                 }} className="improvement__card">
                 <h3 className='improvement__subtitle'>SEO</h3>
-                <p className='improvement__description'>We can help analyse your website and explain how we can help it rank better with search engines such as Google. This can be from a content standpoint but also looking at behind the scenes to see if there's anything else you can do!</p>
+                <p className='improvement__description'>SEO is an integral part of your success - our techniques improve your websites visibility among search rankings.</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -58,7 +58,7 @@ const Improvement = ({ index }) => (
                     delay: 0.2,
                 }} className="improvement__card">
                 <h3 className='improvement__subtitle'>Increased Conversion Rates</h3>
-                <p className='improvement__description'>We can help you increase traffic to your website!</p>
+                <p className='improvement__description'>We create optimized website experiences to meet your conversion goals.</p>
             </motion.article>
             <motion.article
                 initial={{ opacity: 0 }}
@@ -69,7 +69,7 @@ const Improvement = ({ index }) => (
 
                 className="improvement__card">
                 <h3 className='improvement__subtitle'>Usability & Accessibility</h3>
-                <p className='improvement__description'>We can help consult, design and develop a site which will be usable for all audiences.</p>
+                <p className='improvement__description'>The user is at the forefront of design - our designs are created prioritizing accessibility and usability.</p>
             </motion.article>
         </section>
     </div>

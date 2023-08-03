@@ -6,17 +6,15 @@
 
 #header {
     background-color: $header-bg;
-    height: $px80;
-    padding: 1rem;
+    padding: 1rem 1rem;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     overflow: hidden;
 
     @include tablet {
-        height: $px120;
         width: auto;
-        padding: 0 2rem;
+        padding: 1rem 2rem;
         overflow: unset;
     }
 
@@ -29,9 +27,9 @@
         height: 100%;
         position: absolute;
         background-color: black;
-        top: 7rem;
+        top: 4rem;
         left: -6rem;
-        padding: 1rem;
+        padding: 3rem 1rem;
 
         @include tablet {
             display: flex;
@@ -63,7 +61,7 @@
             margin-left: -2rem;
             margin-bottom: 0;
             gap: 2rem;
-            padding: 2rem;
+            padding: 0 2rem;
             transition: all 0.25s cubic-bezier(1, 0.23, 0.84, 0.63);
             transition-delay: 0.25s;
             transition-property: margin-left opacity;
@@ -119,17 +117,17 @@
         }
 
         &__link {
-            size: $px20;
+            font-size: $px16;
             color: $header-item;
             font-weight: 500;
             text-transform: uppercase;
             text-decoration: none;
-            padding: 1rem;
-            border-radius: 0.75rem;
+            padding: 0.2rem 1rem;
+            border-radius: 1.5rem;
 
             @include tablet {
 
-                padding: 0.75rem;
+                padding: 0.4rem 1rem;
                 display: flex;
             }
 
@@ -138,7 +136,7 @@
             }
 
             &--request {
-                size: $px18;
+                font-size: $px14;
                 color: $header-btn;
                 font-weight: 600;
             }
@@ -151,7 +149,7 @@
     }
 
     .headerlogo {
-        font-size: $px44;
+        font-size: $px28;
         font-weight: 700;
         text-decoration: none;
 
@@ -161,6 +159,8 @@
 
         &__visual {
             color: $logo-vis;
+        }
+        @include tablet {
         }
     }
 }

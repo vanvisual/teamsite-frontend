@@ -1,5 +1,6 @@
 import './HomePage.scss';
 import { useDocumentTitle } from '../../utils/functions';
+import {motion} from "framer-motion";
 // Components
 import HomeHero from '../../Components/HomeHero/HomeHero';
 import Improvement from '../../Components/Improvement/Improvement';
@@ -10,14 +11,18 @@ const HomePage = () => {
   useDocumentTitle('Home - VanVisual.com');
 
   return (
-    <div className="homepage">
+    <motion.div 
+      initial={{opacity: 0}}
+      animate={{opacity: 1, transition:{duration: 2}}}
+      className="homepage"
+    >
 
       <HomeHero />
       <Improvement />
       <Approach />
       <FindHelp />
 
-    </div>
+    </motion.div>
   )
 };
 

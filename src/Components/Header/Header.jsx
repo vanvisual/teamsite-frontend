@@ -1,12 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { useToggleClass } from '../../utils/functions';
-import { animateLetters } from '../../utils/functions';
 
 import './Header.scss';
 
 const Header = () => {
-  const [isHamburgerOpen, toggleHamburger, isHamburgerClicked, setIsHamburgerClicked] = useToggleClass(false);
+  const [isHamburgerOpen, toggleHamburger, setIsHamburgerClicked] = useToggleClass(false);
   const [delayedItems, setDelayedItems] = useState([]);
   const delayedItemsTimeoutsRef = useRef([]);
 

@@ -1,8 +1,6 @@
 import "./Contact.scss";
 import { useState } from "react";
 import emailIcon from "../../assets/icons/Email_Icon.svg";
-import { Link } from "react-router-dom";
-import phoneIcon from "../../assets/icons/Phone_Icon.svg";
 import FormControl from "../../Components/FormControl/FormControl";
 import { uid } from "uid";
 import {motion} from "framer-motion";
